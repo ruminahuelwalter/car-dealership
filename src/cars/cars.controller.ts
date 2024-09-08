@@ -22,7 +22,7 @@ export class CarsController {
     }
 
     @Post()
-    @UsePipes( ValidationPipe )
+    // @UsePipes( ValidationPipe ) - Ahora va a estar a nivel global
     createCar( @Body() createCarDto: CreateCarDto) {
         return createCarDto;
     }
